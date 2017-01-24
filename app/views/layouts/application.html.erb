@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PersonalSite</title>
+    <title>My personal Site</title>
     <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+           <%= link_to image_tag('fun_wiki_logo.png', size: '50x50', class: "info_hover"), root_path, class: "navbar-brand", id:"logo" %>
+        </div>
+        <div class="collapse navbar-collapse" id="wikipedia-nav">
+          <ul class="nav navbar-nav">
+            <li>
+              <%= link_to "Comment wall", :anchor => "wall" %>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Info<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Comment wall2", :anchor => "wall2" %></li>
+                <li role="separator" class="divider"></li>
+                <li><%= link_to "Comment wall3", :anchor => "wall3" %></li>
+                <li role="separator" class="divider"></li>
+                <li><%= link_to "Comment wall4", :anchor => "wall4" %></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap.min.css" rel="stylesheet"/>
+
+      <%= yield %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/dataTables.bootstrap.min.js"></script>
+
+
   </body>
+</html>
 </html>

@@ -23,7 +23,7 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #F05F40;
+  color: black;
 }
 a:hover,
 a:focus {
@@ -60,6 +60,8 @@ aside {
 }
 .no-padding {
   padding: 0;
+  padding-bottom: 60px;
+  background-color: #F05F40;
 }
 .navbar-default {
   background-color: white;
@@ -209,7 +211,7 @@ header .header-content .header-content-inner p {
   }
 }
 .section-heading {
-  margin-top: 0;
+  margin-top: 15px;
 }
 .service-box {
   max-width: 400px;

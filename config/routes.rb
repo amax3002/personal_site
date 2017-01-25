@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'welcome#homepage'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get "/timeline", controller: :welcome, action: :timeline, as: :timeline
+  root 'welcome#homepage'
 end

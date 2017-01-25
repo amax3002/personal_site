@@ -10,13 +10,13 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "creative";
- @import "creative.min.css";
+ @import "creative.min.scss";
+ @import "landing-page";
+ @import "*";
 
  .icon_text_first_move{
    font-size: 10px;

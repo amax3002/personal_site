@@ -24,7 +24,6 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <%= link_to "Something", :anchor => "wall" %>
           </ul>
               <ul class="nav navbar-nav navbar-right">
                   <li>
@@ -49,9 +48,7 @@
 
       <%= yield %>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/dataTables.bootstrap.min.js"></script>
-
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
 
   </body>

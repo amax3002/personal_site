@@ -1,25 +1,7 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# personal_site
+# Personal Site
+[Visit Site](https://goo.gl/xcp6la)
+## Description
+Code used to build a website for potential employeers. Provides links to my LinkedIn, Github, and Projects that I want to show off. 
+## Gems/Code Used
+* Timeline-Setter gem
+* Bootstrap for the layout
